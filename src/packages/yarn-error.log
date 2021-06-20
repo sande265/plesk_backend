@@ -1,0 +1,61 @@
+Arguments: 
+  C:\Program Files\nodejs\node.exe C:\Users\sande\AppData\Roaming\npm\node_modules\yarn\bin\yarn.js start
+
+PATH: 
+  C:\Users\sande\bin;C:\Program Files\Git\mingw64\bin;C:\Program Files\Git\usr\local\bin;C:\Program Files\Git\usr\bin;C:\Program Files\Git\usr\bin;C:\Program Files\Git\cmd;C:\Program Files\Common Files\Oracle\Java\javapath;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0;C:\Windows\System32\OpenSSH;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\NVIDIA Corporation\NVIDIA NvDLISR;C:\Program Files\Git\cmd;C:\Users\sande\AppData\Local\Microsoft\WindowsApps;C:\Users\sande\AppData\Local\hyper\app-3.0.2\resources\bin;C:\adb;C:\Program Files\nodejs;C:\Program Files\Microsoft VS Code\bin;C:\Program Files\Docker\Docker\resources\bin;C:\ProgramData\DockerDesktop\version-bin;C:\Program Files\Amazon\AWSCLIV2;C:\Program Files\PuTTY;C:\Users\sande\AppData\Local\Microsoft\WindowsApps;C:\Users\sande\AppData\Local\hyper\app-3.0.2\resources\bin;C:\flutter\bin;C:\Users\sande\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\sande\AppData\Roaming\npm;C:\Program Files\heroku\bin;C:\Program Files\Git\usr\bin\vendor_perl;C:\Program Files\Git\usr\bin\core_perl
+
+Yarn version: 
+  1.22.10
+
+Node version: 
+  14.17.0
+
+Platform: 
+  win32 x64
+
+Trace: 
+  SyntaxError: D:\practise\MERN DEV\Plesk Backend\src\packages\package.json: Unexpected token } in JSON at position 127
+      at JSON.parse (<anonymous>)
+      at C:\Users\sande\AppData\Roaming\npm\node_modules\yarn\lib\cli.js:1625:59
+      at Generator.next (<anonymous>)
+      at step (C:\Users\sande\AppData\Roaming\npm\node_modules\yarn\lib\cli.js:310:30)
+      at C:\Users\sande\AppData\Roaming\npm\node_modules\yarn\lib\cli.js:321:13
+
+npm manifest: 
+  {
+    "name": "back-end",
+    "version": "1.0.0",
+    "description": "mern backend",
+    "scripts": {
+      "start": "node server.js",
+    },
+    "repository": {
+      "type": "git",
+      "url": "git+https://github.com/sande265/MERN-Backend.git"
+    },
+    "author": "sande",
+    "license": "ISC",
+    "bugs": {
+      "url": "https://github.com/sande265/MERN-Backend/issues"
+    },
+    "homepage": "https://github.com/sande265/MERN-Backend#readme",
+    "dependencies": {
+      "bcryptjs": "^2.4.3",
+      "body-parser": "^1.19.0",
+      "cors": "^2.8.5",
+      "dotenv": "^10.0.0",
+      "eslint": "^7.28.0",
+      "express": "^4.17.1",
+      "express-validator": "^6.11.1",
+      "jsonwebtoken": "^8.5.1",
+      "mongoose": "^5.12.13",
+      "mysql": "^2.18.1",
+      "nodemon": "^2.0.7"
+    }
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile
