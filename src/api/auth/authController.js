@@ -23,7 +23,7 @@ module.exports = {
                     })
                 } else {
                     result.password = undefined;
-                    const token = jwt.sign({ result: result }, process.env.JWT_SECRET, { expiresIn: '1h' },)
+                    const token = jwt.sign({ user: result }, process.env.JWT_SECRET, { expiresIn: '1h' },)
                     return res.status(200).json({
                         message: 'Logged In Successfully',
                         token: token,
