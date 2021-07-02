@@ -16,13 +16,10 @@ module.exports = {
                     })
                 }
                 return res.status(400).json({
-                    // error: err,
-                    // message: `${err.sqlMessage ? err.sqlMessage : 'Database Connection Error.'}`,
                     message: `${errMsg[3]} ${errMsg[1]} already Exists.`
                 })
             }
             return res.status(200).json({
-                // data: result,
                 message: 'User Created Successfully'
             })
         })
@@ -72,7 +69,6 @@ module.exports = {
             }
             return res.status(200).json({
                 message: "Successfully Updated User.",
-                // data: result
             })
         })
     },
@@ -89,7 +85,6 @@ module.exports = {
             }
             return res.status(200).json({
                 message: "User Deleted Successfully",
-                // data: result
             })
         })
     }
