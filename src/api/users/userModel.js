@@ -32,7 +32,7 @@ module.exports = {
     },
     getUserById: (id, callback) => {
         pool.query(
-            `SELECT first_name, last_name, username, email, role, image from user where id=? OR username=?`,
+            `SELECT first_name, last_name, username, email, role, image from user where id=? || username=?`,
             [id],
             (error, result) => {
                 if (error) return callback(error)
