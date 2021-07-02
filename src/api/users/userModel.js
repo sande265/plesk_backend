@@ -44,12 +44,11 @@ module.exports = {
         const updated_at = new Date()
         updated_at.toLocaleDateString('fr-CA', { year: 'numeric', month: '2-digit', day: '2-digit' })
         pool.query(
-            `UPDATE user set first_name=?, last_name=?, username=?, password=?, email=?, role=?, image=?, updated_at = ? where id = ?`,
+            `UPDATE user set first_name=?, last_name=?, username=?, email=?, role=?, image=?, updated_at = ? where username = ?`,
             [
                 data.first_name,
                 data.last_name,
                 data.username,
-                data.password,
                 data.email,
                 data.role,
                 data.image,

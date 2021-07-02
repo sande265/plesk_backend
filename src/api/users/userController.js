@@ -61,8 +61,6 @@ module.exports = {
     updateUser: (req, res) => {
         const id = req.params.id;
         const body = req.body;
-        const salt = genSaltSync(10);
-        body.password = hashSync(body.password, salt)
         updateUser(id, body, (err, result) => {
             if (err) return res.status(400).json({
                 message: `${err.sqlMessage ? err.sqlMessage : 'Something Went Wrong'}`,
